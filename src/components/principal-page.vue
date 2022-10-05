@@ -2,7 +2,7 @@
   <div class="conteiner">
     <div class="home">
       <logo />
-      <h2>
+      <h2 class="dark-theme">
         Uma jornada para quem não tem medo do desconhecido. O caminho para o
         Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a
         recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna.
@@ -13,7 +13,7 @@
     </div>
     <div class="sobre">
       <div class="sobre--text">
-        <h1>O MUNDO INVERTIDO</h1>
+        <h1>O MUNDO <br/> INVERTIDO</h1>
         <p>
           O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas
           horrendas, tempestades assustadoras, muita escuridão e entidades
@@ -78,7 +78,7 @@
       </div>
     </div>
     <div class="final">
-        <logo />
+      <logo />
     </div>
   </div>
 </template>
@@ -92,4 +92,53 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="less" scoped>
+.conteiner {
+  .home {
+    padding: 150px 0 0 0;
+    background-color: rgb(227, 227, 227);
+    text-align: center;
+    height: 1000px;
+    h2 {
+      margin-top: 100px;
+      width: 50%;
+      margin: 100px auto;
+    }
+    button {
+      width: 500px;
+      height: 100px;
+      border: 6px solid red;
+      color: red;
+      background-color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .sobre {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 300px;
+    &--text{
+      h1{
+        color: #CF0F0F;
+        font-size: 90px;
+        width: 100%;
+        margin: auto;
+
+      }
+      width: 50vw;
+      height: 100%;
+      margin: auto 0;
+      font-size: 30px;
+    }
+    &--img{
+      img{
+        width: 600px;
+      }
+
+    }
+  }
+}
+</style>
